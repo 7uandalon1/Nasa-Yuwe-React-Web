@@ -11,6 +11,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import { EffectFade, Autoplay} from 'swiper';
 
+import {BsFillArrowDownCircleFill} from 'react-icons/bs';
+
 function Placeholder(){
     return(
         <section className='principal_slider-s'>
@@ -29,21 +31,21 @@ function Placeholder(){
                       className="mySwiper"
                     >
                       <SwiperSlide>
-                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                        <img className='slider' src={require('./img/servicios/alojamiento_rural/73285021_120547206024500_1614865251839246336_n.jpg')} />
                       </SwiperSlide>
                       <SwiperSlide>
-                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                        <img className='slider' src={require("./img/servicios/alojamiento_rural/150671106_450888232990394_1776307662931618522_n.jpg")} />
                       </SwiperSlide>
                       <SwiperSlide>
-                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                        <img className='slider' src={require("./img/servicios/alojamiento_rural/150584785_450888229657061_3218023440370084312_n.jpg")} />
                       </SwiperSlide>
                       <SwiperSlide>
-                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                        <img className='slider' src={require("./img/servicios/alojamiento_rural/151111150_450887062990511_2353668776704890955_n.jpg")} />
                       </SwiperSlide>
               </Swiper>
               <div className='textContent' id='principal_slider-text'>
-                <h1>!Es un placer conocerte¡</h1>
-                <button type="button" class="btn btn-primary btn-lg">Button</button>
+                <h1>Conocenos</h1>
+                <a type="button"  class="a-button"><BsFillArrowDownCircleFill></BsFillArrowDownCircleFill></a>
               </div>
               </div>
               

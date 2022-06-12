@@ -17,7 +17,7 @@ function Header() {
                 <header className="App-header"  id='header'>
                     <Navbar id='navbar' collapseOnSelect expand="lg" bg="#000" variant="dark" >
                         <Container>
-                            <Navbar.Brand href="#home"> <img src={logo}  class="img-fluid rounded-top" alt=""></img></Navbar.Brand>
+                            <Navbar.Brand href="#home"> <img src={logo}  class="logo rounded-top" alt=""></img></Navbar.Brand>
                             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                             <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
