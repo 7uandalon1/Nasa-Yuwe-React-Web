@@ -11,7 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import { EffectFade, Autoplay} from 'swiper';
 
-import {BsFillArrowDownCircleFill} from 'react-icons/bs';
+import {BsBoxArrowDown} from 'react-icons/bs';
 
 function Placeholder(){
     return(
@@ -44,8 +44,7 @@ function Placeholder(){
                       </SwiperSlide>
               </Swiper>
               <div className='textContent' id='principal_slider-text'>
-                <h1>Conocenos</h1>
-                <a type="button"  class="a-button"><BsFillArrowDownCircleFill></BsFillArrowDownCircleFill></a>
+               <button type="button" class="a-button"><BsBoxArrowDown></BsBoxArrowDown> Click aquí</button>
               </div>
               </div>
               
