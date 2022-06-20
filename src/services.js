@@ -37,14 +37,17 @@ function Services(props) {
         <div className='service_img_holder'>
           <img src={props.img_holder} class="img-fluid rounded-top" alt=""></img>
         </div>
-        <div className='service_title_holder'>
+        
+        <div className='text_button_holder'>
+          <div className='service_title_holder'>
 
-          <h1>{props.header}</h1>
+            <h1>{props.header}</h1>
 
+          </div>
+          <Button variant="primary" onClick={() => setModalShow(true)}>
+            Mostrar Servicio
+          </Button>
         </div>
-        <Button variant="primary" onClick={() => setModalShow(true)}>
-          Launch vertically centered modal
-        </Button>
       </div>
       <MyVerticallyCenteredModal
         propsM={propsM}

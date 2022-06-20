@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { useEffect, useRef, useLayoutEffect } from 'react';
+
 import {Nav, Navbar, Container, NavDropdown} from 'react-bootstrap';
 
 import logo from './cropped-logo-sin-nombre.png';
@@ -8,7 +10,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Headroom from 'react-headroom';
 
+
+
 function Header() {
+
+
     
     return (
             <React.Fragment>

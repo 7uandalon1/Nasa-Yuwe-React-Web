@@ -13,6 +13,21 @@ import { EffectFade, Autoplay} from 'swiper';
 
 import {BsBoxArrowDown} from 'react-icons/bs';
 
+import {Link} from 'react-scroll';
+
+setTimeout(animate, 1000);
+
+
+function animate(){
+  const btn = document.querySelector('.a-button');
+  btn.addEventListener('click', () => {
+    btn.classList.remove('animate')
+    setTimeout(() => btn.classList.add('animate'), 100);
+  });
+}
+
+
+
 function Placeholder(){
     return(
         <section className='principal_slider-s'>
@@ -44,7 +59,7 @@ function Placeholder(){
                       </SwiperSlide>
               </Swiper>
               <div className='textContent' id='principal_slider-text'>
-               <button type="button" class="a-button"><BsBoxArrowDown></BsBoxArrowDown> Click aquí</button>
+               <Link type="button" spy={true} offset={0} duration={250} className="a-button" to ='services-section'><BsBoxArrowDown></BsBoxArrowDown> Nuestros Servicios</Link>
               </div>
               </div>
               

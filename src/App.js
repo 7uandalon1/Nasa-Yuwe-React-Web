@@ -1,15 +1,18 @@
+// default React components
 
-import React, {Component} from 'react';
+import React, {Component, useEffect, useRef } from 'react';
+
+import {render} from 'react-dom';
+
+// import fragments
 
 import {Header} from './header.js';
 
 import { Placeholder } from './placeholder.js';
 
-import {Services} from './services.js';
+import {ServiceFragment} from './servicesFragment.js';
 
-import {render} from 'react-dom';
-
-
+import {HistoryFragment} from './historyFragment.js';
 
 // Import the bootstrap css
 
@@ -17,82 +20,38 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Import the custom css
 import './App.css';
+import { TeamFragment } from './teamFragment.js';
+
+import { FooterFragment } from './footerFragment.js';
+
+// Import the GSAP library
+
 
 function App() {
+
+
+
   return (
     <div className="App">
        <Header></Header>
        <main>
-          <Placeholder id='placeholder'></Placeholder>
-        <section id='services-section'>
-          <div id='services-container'>
-          <div className='service_item'>
-            <Services
-              img_holder={require('./img/servicios/adopta_un_arbol/177819528_494547941957756_8235950911964960558_n.jpg')}
-              header='Web Development'
-              subtitle='We can build your website from scratch or redevelop your existing website.'
-              body='lorem ipsum'
-            ></Services>  
-          </div>
-          <div className='service_item'>
-            <Services
-              img_holder={require('./img/servicios/adopta_un_arbol/177819528_494547941957756_8235950911964960558_n.jpg')}
-              header='Web Development'
-              subtitle='We can build your website from scratch or redevelop your existing website.'
-              body='lorem ipsum'
-            ></Services>  
-          </div>
-          <div className='service_item'>
-            <Services
-              img_holder={require('./img/servicios/adopta_un_arbol/177819528_494547941957756_8235950911964960558_n.jpg')}
-              header='Web Development'
-              subtitle='We can build your website from scratch or redevelop your existing website.'
-              body='lorem ipsum'
-            ></Services>  
-          </div>
-          <div className='service_item'>
-            <Services
-              img_holder={require('./img/servicios/adopta_un_arbol/177819528_494547941957756_8235950911964960558_n.jpg')}
-              header='Web Development'
-              subtitle='We can build your website from scratch or redevelop your existing website.'
-              body='lorem ipsum'
-            ></Services>  
-          </div>
-          <div className='service_item'>
-            <Services
-              img_holder={require('./img/servicios/adopta_un_arbol/177819528_494547941957756_8235950911964960558_n.jpg')}
-              header='Web Development'
-              subtitle='We can build your website from scratch or redevelop your existing website.'
-              body='lorem ipsum'
-            ></Services>  
-          </div>
-          <div className='service_item'>
-            <Services
-              img_holder={require('./img/servicios/adopta_un_arbol/177819528_494547941957756_8235950911964960558_n.jpg')}
-              header='Web Development'
-              subtitle='We can build your website from scratch or redevelop your existing website.'
-              body='lorem ipsum'
-            ></Services>  
-          </div>
-          
-          </div>
-        </section>
+          <Placeholder></Placeholder>
+          <ServiceFragment></ServiceFragment>   
+          <HistoryFragment></HistoryFragment>     
+          <Partner
+                title='Sandra Milena Herrera'
+                job = 'Representante Legal'
+                img = {require('./img/team/na.png')}
+                facebook = 'https://www.facebook.com/sandra.milena.herrera'
+                twitter = 'https://twitter.com/sandra_milena'
+                instagram = 'https://www.instagram.com/sandra_milena'
+              />
 
           
         
       </main>
-                
-          <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
 
-          <script
-            src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
-            crossorigin></script>
-
-          <script
-            src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
-            crossorigin></script>
-          <script></script>
-       
+      <FooterFragment></FooterFragment>
     </div>
   );
 }
