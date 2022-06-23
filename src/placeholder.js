@@ -59,7 +59,7 @@ function Placeholder(){
                       </SwiperSlide>
               </Swiper>
               <div className='textContent' id='principal_slider-text'>
-               <Link type="button" spy={true} offset={0} duration={250} className="a-button" to ='services-section'><BsBoxArrowDown></BsBoxArrowDown> Nuestros Servicios</Link>
+               <Link type="button" spy={true} offset={0} duration={250} className="a-button" to ='services-section'><BsBoxArrowDown></BsBoxArrowDown> <h2>Nuestros Servicios</h2></Link>
               </div>
               </div>
               

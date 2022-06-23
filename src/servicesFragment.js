@@ -29,6 +29,7 @@ function ServiceFragment() {
     return (
         <React.Fragment>
         <section id='services-section'>
+          <h1 className='title'>Servicios</h1>
          <Swiper
            breakpoints={{
             // when window width is >= 320px
@@ -62,8 +63,8 @@ function ServiceFragment() {
 
                     
          >
-            <div className='textContent' id='principal_slider-text'>
-               <Link type="button" spy={true} offset={0} duration={250} className="a-button" to ='history-container'><BsBoxArrowDown></BsBoxArrowDown> Nuestra Historia</Link>
+            <div className='textContent' id='services-button-container'>
+               <Link type="button" spy={true} offset={0} duration={250} className="a-button" to ='history-container'><BsBoxArrowDown></BsBoxArrowDown> <h2>Nuestra Historia</h2> </Link>
               </div>
           <SwiperSlide>
           <Services

@@ -2,8 +2,6 @@
 
 import React, {Component, useEffect, useRef } from 'react';
 
-import {render} from 'react-dom';
-
 // import fragments
 
 import {Header} from './header.js';
@@ -38,14 +36,7 @@ function App() {
           <Placeholder></Placeholder>
           <ServiceFragment></ServiceFragment>   
           <HistoryFragment></HistoryFragment>     
-          <Partner
-                title='Sandra Milena Herrera'
-                job = 'Representante Legal'
-                img = {require('./img/team/na.png')}
-                facebook = 'https://www.facebook.com/sandra.milena.herrera'
-                twitter = 'https://twitter.com/sandra_milena'
-                instagram = 'https://www.instagram.com/sandra_milena'
-              />
+          <TeamFragment></TeamFragment>
 
           
         
