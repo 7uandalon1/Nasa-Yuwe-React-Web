@@ -1,12 +1,11 @@
-import React from 'react';
+import React from "react";
 
 function ClientsFragment() {
-    console.log(Array)
-    
-    return(
-        <section className='clients-section'>
-            <div className='clients-container'>
-{/*                 <a href="" className="client" id="client1">
+
+  return (
+    <section className="clients-section">
+      <div className="clients-container">
+        {/*                 <a href="" className="client" id="client1">
                     <div className="client-img-holder">
                         <img src={require('./img/clients/Logo_ebird.png')} alt="" className="client-img" />
                 </div>
@@ -21,9 +20,8 @@ function ClientsFragment() {
                         <img src={require('./img/clients/')} alt="" className="client-img" />
                     </div>
     </a> */}
-            
-            </div>
-        </section>
-    )
+      </div>
+    </section>
+  );
 }
-export {ClientsFragment};
+export { ClientsFragment };

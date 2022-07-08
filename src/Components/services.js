@@ -1,6 +1,6 @@
-import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+import React from "react";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -17,9 +17,7 @@ function MyVerticallyCenteredModal(props) {
       </Modal.Header>
       <Modal.Body>
         <h4>{props.propsM.subtitle}</h4>
-        <p>
-          {props.propsM.body}
-        </p>
+        <p>{props.propsM.body}</p>
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
@@ -33,16 +31,18 @@ function Services(props) {
   const [modalShow, setModalShow] = React.useState(false);
   return (
     <React.Fragment>
-      <div className='service_item'>
-        <div className='service_img_holder'>
-          <img src={props.img_holder} class="img-fluid rounded-top" alt=""></img>
+      <div className="service_item">
+        <div className="service_img_holder">
+          <img
+            src={props.img_holder}
+            class="img-fluid rounded-top"
+            alt=""
+          ></img>
         </div>
-        
-        <div className='text_button_holder'>
-          <div className='service_title_holder'>
 
+        <div className="text_button_holder">
+          <div className="service_title_holder">
             <h1>{props.header}</h1>
-
           </div>
           <Button variant="primary" onClick={() => setModalShow(true)}>
             Mostrar Servicio

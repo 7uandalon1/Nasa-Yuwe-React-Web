@@ -1,54 +1,62 @@
-import React from 'react';
+import React from "react";
 
-import { useEffect, useRef } from 'react';
+import {Swiper, SwiperSlide} from 'swiper/react'
 
-import { render } from 'react-dom';
+import { Link } from "react-scroll";
 
-import { Link } from 'react-scroll';
-import { BsBoxArrowDown, BsArrowBarDown } from 'react-icons/bs';
+import { BsBoxArrowDown, BsArrowBarDown } from "react-icons/bs";
 
-import {motion, useAnimation} from 'framer-motion';
+import { Scrollbar, Autoplay, Navigation } from "swiper";
 
-import {useInView} from 'react-intersection-observer';
+function HistoryFragment() {
 
-function HistoryFragment() { 
- 
-     const arrow = <BsArrowBarDown/>;
-     const controlItemHistory = useAnimation();
-     const historyVariants ={
-        h1Starter: {y: 0, x: -50},
-        h1OnView: {top: '5%', x: -50},
-        pStarter: {opacity: 0},
-        pOnView: {opacity: 1} 
-     }
 
-    return (
+  return (
     <React.Fragment>
-    <section id='history-section'>
-    <div className="history-container">
-        <div className='history-item first-part'>
-            <motion.h1 viewport={{once: true}} initial='h1Starter' whileInView='h1OnView' animate='h1Starter' transition={{delay: 1,duration: 1}} variants={historyVariants} >History</motion.h1>
-            <motion.p viewport={{once: true}} initial='pStarter' whileInView='pOnView' animate='pStarter' transition={{delay: 2, duration: 1}} variants={historyVariants}>Lorem, ipsum dolor.</motion.p>
+      <section id="history-section">
+        <div className="history-container">
 
-            <Link type='button' className='goDown' spy={true} offset={0} duration={250} to='second-part'>{arrow}</Link>
-        
-        </div>
-        <div className='history-item second-part'>
-        <motion.h1 viewport={{once: true}} initial='h1Starter' whileInView='h1OnView' animate='h1Starter' transition={{delay: 1,duration: 1}} variants={historyVariants} >History</motion.h1>
-            <motion.p viewport={{once: true}} initial='pStarter' whileInView='pOnView' animate='pStarter' transition={{delay: 2, duration: 1}} variants={historyVariants}>Lorem, ipsum dolor.</motion.p>
-            <Link type='button' className='goDown' spy={true} offset={0} duration={250} to='third-part'>{arrow}</Link>
-        </div>
-        <div className='history-item third-part' >
-        <motion.h1 viewport={{once: true}} initial='h1Starter' whileInView='h1OnView' animate='h1Starter' transition={{delay: 1,duration: 1}} variants={historyVariants} >History</motion.h1>
-            <motion.p viewport={{once: true}} initial='pStarter' whileInView='pOnView' animate='pStarter' transition={{delay: 2, duration: 1}} variants={historyVariants}>Lorem, ipsum dolor.</motion.p>
-        <Link type='button' className='goDown' spy={true} offset={0} duration={250} to='team-title-container'>{arrow}</Link>
-        </div>
-        <Link type='button' offset={0} duration={250} className='goDownProvisional' to='team-title-container'><BsBoxArrowDown size={25}></BsBoxArrowDown></Link>
-    </div>
+            <h1 id="history-title">Nuestra Historia</h1>
+            <p>Nasa Yuwe es una reserva natural de la sociedad civil y centro agrotur&iacute;stico que nace en el a&ntilde;o de 2017 como una iniciativa familiar que propende por el cuidado y preservaci&oacute;n de los ecosistemas end&eacute;micos de Serran&iacute;a de las Minas, fomentando la cultura de la sostenibilidad y sustentabilidad.</p>
+<p>En Nasa Yuwe resaltamos la cultura, las costumbres, las tradiciones de las etnias Nasa que han habitado ancestralmente el macizo colombiano&nbsp;&nbsp;</p>
 
-    </section>
+        </div>
+{/*         <Swiper 
+        breakpoints={{
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 1
+            },
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 2
+            },
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 3
+            }
+          }}
+          observer={true}
+          slidesPerView={3}
+          spaceBetween={0}
+          slidePrevClass="swiper-prev-slide"
+          slideNextClass="swiper-next-slide"
+          effect={"fade"}
+          modules={[Autoplay, Navigation, Scrollbar]}
+          centeredSlides={true}
+          loop={true}
+          autoplay={true}
+          autoplayTimeout={1000}
+          scrollbar={{
+            hide: false
+          }}
+          className="history_slider">
+          <SwiperSlide>
 
+          </SwiperSlide>
+        </Swiper> */}
+      </section>
     </React.Fragment>
-    );
+  );
 }
-export {HistoryFragment};
+export { HistoryFragment };
