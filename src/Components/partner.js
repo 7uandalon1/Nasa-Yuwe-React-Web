@@ -3,7 +3,6 @@ import {
   BsFacebook,
   BsInstagram,
   BsTwitter,
-  BsLinkedin,
   BsArrowBarDown
 } from "react-icons/bs";
 import { Link } from "react-scroll";
@@ -31,9 +30,6 @@ function Partner(props) {
         </a>
         <a href={props.instagram}>
           <BsInstagram></BsInstagram>
-        </a>
-        <a href={props.linkedin}>
-          <BsLinkedin></BsLinkedin>
         </a>
       </div>
       <div>

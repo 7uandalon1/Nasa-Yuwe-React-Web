@@ -38,22 +38,8 @@ function ServiceFragment() {
 
         <h1 className="title">Servicios</h1>
         <Swiper
-          breakpoints={{
-            // when window width is >= 320px
-            320: {
-              slidesPerView: 1
-            },
-            // when window width is >= 640px
-            640: {
-              slidesPerView: 2
-            },
-            // when window width is >= 768px
-            768: {
-              slidesPerView: 3
-            }
-          }}
           observer={true}
-          slidesPerView={2}
+          slidesPerView={1}
           spaceBetween={0}
           slidePrevClass="swiper-prev-slide"
           slideNextClass="swiper-next-slide"

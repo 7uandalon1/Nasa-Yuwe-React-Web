@@ -1,9 +1,8 @@
 import React from "react";
 import { Formik, Form, useField } from "formik";
 import { ReactComponent as Illustration } from "./assets/svg/undraw_newsletter_re_wrob.svg";
-import { Link } from "react-scroll";
 import * as yup from "yup";
-import { BsBoxArrowUp } from "react-icons/bs";
+
 
 const CustomInputText = ({ label, ...props }) => {
   const [field, meta] = useField(props);
@@ -22,8 +21,8 @@ const CustomCheckbox = ({ children, ...props }) => {
   const [field, meta] = useField(props, "checkbox");
   return (
     <>
-      <label className="checkbox">
-        <input type="checkbox" {...field} {...props} />
+      <label className="checkbox ">
+        <input type="checkbox" className="form-check-input" {...field} {...props} />
         {children}
       </label>
       {meta.touched && meta.error ? (
@@ -51,6 +50,7 @@ function NewsletterFragment() {
     <React.Fragment>
       <section id="contact-us-section">
         <div className="contact-us-container">
+        <h1 className="form-title">Unete a nuestro <h1 className='Newsletter-word'>Newsletter</h1> <p className="Newsletter-title-p">¡para conocer más ofertas! </p></h1>
           <Formik
             initialValues={{
               name: "",
@@ -74,7 +74,8 @@ function NewsletterFragment() {
             })}
             onSubmit={(values, { setSumbitting, resetForm }) => {
               setTimeout(() => {
-                alert(JSON.stringify(values, null, 2));
+                /* alert(JSON.stringify(values, null, 2)); */
+                alert('Email Send')
                 resetForm();
                 setSumbitting(false);
               }, 300);
@@ -82,23 +83,26 @@ function NewsletterFragment() {
           >
             {(props) => (
               <div className="form-container">
-                <Form>
-                  <h1>Conoce más ofertas y exclusivas oportunidades</h1>
+                <Form >
+                  
+                  <h3>
+                    ¡Llename!
+                  </h3>
 
                   <CustomInputText
-                    label="Nombre"
+                    label="¿Cuál es tu nombre?"
                     name="name"
                     type="text"
                     placeholder="Juan David Gamboa"
                   ></CustomInputText>
                   <CustomInputText
-                    label="Email"
+                    label="¿Cuál es tu E-mail?"
                     name="email"
                     type="email"
                     placeholder="example@test.div"
                   ></CustomInputText>
                   <CustomCheckbox name="TermsAcepted">
-                    Acepto los <a href="">Terminos y Condiciones</a>
+                    Acepto los <a href="#">Terminos y Condiciones</a>
                   </CustomCheckbox>
                   <button type="sumbit" className="sumbit-button">
                     {" "}

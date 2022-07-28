@@ -1,24 +1,35 @@
 import React from "react";
 
-import {Swiper, SwiperSlide} from 'swiper/react'
+import {ReactComponent as Svg1} from './assets/svg/undraw_nature_benefits_re_kk70.svg'
 
-import { Link } from "react-scroll";
-
-import { BsBoxArrowDown, BsArrowBarDown } from "react-icons/bs";
-
-import { Scrollbar, Autoplay, Navigation } from "swiper";
-
+import {ReactComponent as Svg2} from './assets/svg/undraw_country_side_re_0dou.svg'
 function HistoryFragment() {
 
 
   return (
     <React.Fragment>
+      
       <section id="history-section">
         <div className="history-container">
 
             <h1 id="history-title">Nuestra Historia</h1>
-            <p>Nasa Yuwe es una reserva natural de la sociedad civil y centro agrotur&iacute;stico que nace en el a&ntilde;o de 2017 como una iniciativa familiar que propende por el cuidado y preservaci&oacute;n de los ecosistemas end&eacute;micos de Serran&iacute;a de las Minas, fomentando la cultura de la sostenibilidad y sustentabilidad.</p>
-<p>En Nasa Yuwe resaltamos la cultura, las costumbres, las tradiciones de las etnias Nasa que han habitado ancestralmente el macizo colombiano&nbsp;&nbsp;</p>
+            <div className='paragraph'>
+              <div>
+                <p>Nasa Yuwe es una reserva natural de la sociedad civil y centro agrotur&iacute;stico que nace en el a&ntilde;o de 2017 como una iniciativa familiar que propende por el cuidado y preservaci&oacute;n de los ecosistemas end&eacute;micos de Serran&iacute;a de las Minas, fomentando la cultura de la sostenibilidad y sustentabilidad.</p>
+              </div>
+              <div>
+                <Svg2 className="paragraph-svg"></Svg2>
+              </div>
+            </div>
+
+          <div className="paragraph-inverted">
+            <div>
+              <p>En Nasa Yuwe resaltamos la cultura, las costumbres, las tradiciones de las etnias Nasa que han habitado ancestralmente el macizo colombiano&nbsp;&nbsp;</p>
+            </div>
+            <div>
+              <Svg1 className='paragraph-svg'></Svg1>
+            </div>
+          </div>
 
         </div>
 {/*         <Swiper 

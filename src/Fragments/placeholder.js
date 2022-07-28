@@ -11,7 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import { EffectFade, Autoplay } from "swiper";
 
-import { BsBoxArrowDown } from "react-icons/bs";
+import { BsBoxArrowDown, BsFillStarFill } from "react-icons/bs";
 
 import { Link } from "react-scroll";
 
@@ -43,30 +43,37 @@ function Placeholder() {
           <SwiperSlide>
             <img
               className="slider"
-              src={require("./assets/img/servicios/alojamiento_rural/73285021_120547206024500_1614865251839246336_n.jpg")}
+              src={require("./assets/img/servicios/alojamiento_rural/73285021_120547206024500_1614865251839246336_n.jpg") }
+              alt=""
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               className="slider"
               src={require("./assets/img/servicios/alojamiento_rural/150671106_450888232990394_1776307662931618522_n.jpg")}
+              alt=""
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               className="slider"
               src={require("./assets/img/servicios/alojamiento_rural/150584785_450888229657061_3218023440370084312_n.jpg")}
+              alt=""
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               className="slider"
               src={require("./assets/img/servicios/alojamiento_rural/151111150_450887062990511_2353668776704890955_n.jpg")}
+              alt=""
             />
           </SwiperSlide>
         </Swiper>
         <div className="textContent" id="principal_slider-text">
+            <h1>Cultura, Tradición y Turismo</h1>
+            <h2>¡En un mismo lugar!</h2>
 
+            {/* <Link to="history-container" offset={0} smooth={false}><BsBoxArrowDown size={30}></BsBoxArrowDown></Link> */}
         </div>
       </div>
     </section>

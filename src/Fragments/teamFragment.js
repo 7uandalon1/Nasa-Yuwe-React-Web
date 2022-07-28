@@ -25,7 +25,7 @@ function TeamFragment(props) {
           </div>
           <div className="team-container">
             <Partner
-              title="Sandra Milena Herrera"
+              title="Sandra Herrera"
               job="Representante Legal"
               img={sandra}
               facebook="https://web.facebook.com/sandramilena.herrera1"
@@ -33,6 +33,8 @@ function TeamFragment(props) {
               instagram="https://www.instagram.com/herrera_sandramilena/"
               id="1"
               to="2"
+
+              
             />
             <Partner
               title="Pedro Gamboa"

@@ -16,7 +16,7 @@ function Header() {
   return (
     <React.Fragment>
       <div id="relleno"></div>
-      <Headroom id="headroom">
+      <Headroom id="headroom" wrapperStyle={true}>
         <header className="App-header" id="header">
           <Navbar
             id="navbar"
@@ -26,13 +26,18 @@ function Header() {
             variant="dark"
           >
             <Container>
-              <Navbar.Brand href="#home">
+              <Navbar.Brand href="">
                 {" "}
-                <img src={logo} class="logo rounded-top" alt=""></img>
+                <Link offset={0} smooth={false} to={'relleno'}>
+                  <img src={logo} class="logo rounded-top" alt="logo"></img>
+                </Link>
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
+                <Nav.Link href="">
+                    <Link offset={0} smooth={false} to={'info-section'}>¿Quienes Somos?</Link>
+                  </Nav.Link>
                   <Nav.Link href="">
                     <Link offset={0} smooth={false} to={'history-container'}>Historia</Link>
                   </Nav.Link>
@@ -43,7 +48,10 @@ function Header() {
                   <Link offset={-10} smooth={false} to={'team-section'}>Equipo</Link>
                   </Nav.Link>
                   <Nav.Link href="">
-                  <Link offset={0} smooth={false} to={'contact-us-section'}>Contactanos</Link>
+                  <Link offset={0} smooth={false} to={'contact-us-section'}>Newsletter</Link>
+                  </Nav.Link>
+                  <Nav.Link href="">
+                  <Link offset={0} smooth={false} to={'ContactUsFragment-container'}>Contactanos</Link>
                   </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
