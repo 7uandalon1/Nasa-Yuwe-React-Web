@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.09e07259.css",
+    "main.js": "/static/js/main.5eb7e128.js",
+    "static/js/787.29f7389d.chunk.js": "/static/js/787.29f7389d.chunk.js",
+    "static/media/CICL.jpg": "/static/media/CICL.c353ab26aca34297b523.jpg",
+    "static/media/151111150_450887062990511__n.jpg": "/static/media/151111150_450887062990511_2353668776704890955_n.ca0d9135628dc4abede3.jpg",
+    "static/media/150671106_450888232990394__n.jpg": "/static/media/150671106_450888232990394_1776307662931618522_n.00813be4fd5fe437f6c2.jpg",
+    "static/media/CUL.jpg": "/static/media/CUL.1ad28e8b8171055983b0.jpg",
+    "static/media/150584785_450888229657061__n.jpg": "/static/media/150584785_450888229657061_3218023440370084312_n.beb98756cd97974f37c1.jpg",
+    "static/media/pedro.png": "/static/media/pedro.050aa1da8c78428da0da.png",
+    "static/media/cropped-logo-sin-nombre.png": "/static/media/cropped-logo-sin-nombre.9aaae7d832d8c63b81a3.png",
+    "static/media/juan.jpg": "/static/media/juan.5e7e68a4a104a81e58a7.jpg",
+    "static/media/alo.jpg": "/static/media/alo.f51341e9888f289e31a8.jpg",
+    "static/media/CAM.jpg": "/static/media/CAM.4ec62a64045d1e6647c4.jpg",
+    "static/media/73285021_120547206024500__n.jpg": "/static/media/73285021_120547206024500_1614865251839246336_n.586c1ba1243fd8aff695.jpg",
+    "static/media/AVI.jpg": "/static/media/AVI.4dbf22abf5f8eea7104e.jpg",
+    "static/media/gas.jpg": "/static/media/gas.51eb5730c21250eb02a8.jpg",
+    "static/media/ARB.jpg": "/static/media/ARB.be5637800872af10baa2.jpg",
+    "static/media/RDC.jpg": "/static/media/RDC.1d166e03a6912d9871ed.jpg",
+    "static/media/sandra.jpg": "/static/media/sandra.a277260750d5f929a26d.jpg",
+    "static/media/SEN.jpg": "/static/media/SEN.0d8418a683cec849bd7c.jpg",
+    "static/media/undraw_country_side_re_0dou.svg": "/static/media/undraw_country_side_re_0dou.0ec4e75e50f940e699cd7df377df2049.svg",
+    "static/media/undraw_newsletter_re_wrob.svg": "/static/media/undraw_newsletter_re_wrob.cd20728e3a527ba51f5ce35aba440cc3.svg",
+    "static/media/undraw_nature_benefits_re_kk70.svg": "/static/media/undraw_nature_benefits_re_kk70.28a325194ff3fa352845140a6584b3d0.svg",
+    "index.html": "/index.html",
+    "main.09e07259.css.map": "/static/css/main.09e07259.css.map",
+    "main.5eb7e128.js.map": "/static/js/main.5eb7e128.js.map",
+    "787.29f7389d.chunk.js.map": "/static/js/787.29f7389d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.09e07259.css",
+    "static/js/main.5eb7e128.js"
+  ]
+}
