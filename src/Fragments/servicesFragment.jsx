@@ -2,7 +2,7 @@ import React from "react";
 
 import { Scrollbar, Autoplay, Navigation } from "swiper";
 
-import { BsBoxArrowDown } from "react-icons/bs";
+
 
 import "swiper/css";
 
@@ -11,23 +11,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 
-import { useEffect } from "react";
 
 import { Services } from "../Components/services";
 
 
-function animate() {
-  const btn = document.querySelector(".a-button");
-  btn.addEventListener("click", () => {
-    btn.classList.remove("animate");
-    setTimeout(() => btn.classList.add("animate"), 100);
-  });
-}
-
 function ServiceFragment() {
-  useEffect(() => {
-    animate();
-  });
+
 
   return (
     <div>
