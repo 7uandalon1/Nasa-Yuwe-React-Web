@@ -2,7 +2,7 @@ import React from "react";
 
 import { useEffect, useState } from "react";
 
-import { Nav, Navbar, Container} from "react-bootstrap";
+import { Nav, Navbar, Container } from "react-bootstrap";
 
 import logo from "./assets/img/logo/cropped-logo-sin-nombre.webp";
 
@@ -43,40 +43,48 @@ function Header() {
                   <Nav.Link />
 
                   <React.Fragment>
-            <Nav.Link>
-              <NavLink style={({ isActive }) =>
-              isActive ? activeStyle : {color: "inherit"}} to="/">
-                Inicio
-              </NavLink>
-            </Nav.Link>
-            <Nav.Link>
-              <NavLink style={({ isActive }) =>
-              isActive ? activeStyle : {color: "inherit"}} to="/about">
-                Historia
-              </NavLink>
-            </Nav.Link>
-            <Nav.Link>
-              <NavLink style={({ isActive }) =>
-              isActive ? activeStyle : {color: "inherit"}} to="/services">
-                Servicios
-              </NavLink>
-              </Nav.Link>
-              <Nav.Link>
+                    <Nav.Link>
+                      <NavLink style={({ isActive }) =>
+                        isActive ? activeStyle : { color: "inherit" }} to="/">
+                        Inicio
+                      </NavLink>
+                    </Nav.Link>
+                    <Nav.Link>
+                      <NavLink style={({ isActive }) =>
+                        isActive ? activeStyle : { color: "inherit" }} to="/about">
+                        Historia
+                      </NavLink>
+                    </Nav.Link>
+                    <Nav.Link>
+                      <NavLink style={({ isActive }) =>
+                        isActive ? activeStyle : { color: "inherit" }} to="/services">
+                        Servicios
+                      </NavLink>
+                    </Nav.Link>
+                    {/*added menu option products*/}
+                    <Nav.Link>
+                      <NavLink style={({ isActive }) =>
+                        isActive ? activeStyle : { color: "inherit" }} to="/products">
+                        Productos
+                      </NavLink>
+                    </Nav.Link>
 
-              <NavLink style={({ isActive }) =>
-              isActive ? activeStyle : {color: "inherit"}} to="/newsletter">
-                Ofertas
-              </NavLink>
-           
-            </Nav.Link>
-            <Nav.Link href="">
-              <NavLink style={({ isActive }) =>
-              isActive ? activeStyle : {color: "inherit"}} to="/contact">
-                Contactanos
-              </NavLink>
-            </Nav.Link>
-          </React.Fragment>
-  
+                    <Nav.Link>
+
+                      <NavLink style={({ isActive }) =>
+                        isActive ? activeStyle : { color: "inherit" }} to="/newsletter">
+                        Ofertas
+                      </NavLink>
+
+                    </Nav.Link>
+                    <Nav.Link href="">
+                      <NavLink style={({ isActive }) =>
+                        isActive ? activeStyle : { color: "inherit" }} to="/contact">
+                        Contactanos
+                      </NavLink>
+                    </Nav.Link>
+                  </React.Fragment>
+
                 </Nav>
               </Navbar.Collapse>
             </Container>
