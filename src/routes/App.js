@@ -37,11 +37,11 @@ import "./styles/App.css";
 
 // Import React Router
 
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import {HashRouter, Route, Routes} from 'react-router-dom';
 
 function App() {
   return (
-<BrowserRouter>
+<HashRouter>
     <Header></Header>
 
      <Routes>
@@ -71,7 +71,7 @@ function App() {
               </a>
             
       </div>
-</BrowserRouter>
+</HashRouter>
   );
 }
 function home(){

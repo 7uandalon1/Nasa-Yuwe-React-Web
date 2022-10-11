@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 import { Nav, Navbar, Container} from "react-bootstrap";
 
-import logo from "./assets/img/logo/cropped-logo-sin-nombre.png";
+import logo from "./assets/img/logo/cropped-logo-sin-nombre.webp";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 

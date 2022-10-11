@@ -37,6 +37,7 @@ function Services(props) {
             src={props.img_holder}
             class="img-fluid rounded-top"
             alt=""
+            loading="lazy"
           ></img>
         </div>
 
