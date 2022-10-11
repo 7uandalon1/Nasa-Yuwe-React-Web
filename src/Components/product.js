@@ -14,7 +14,7 @@ function IndividualProduct(props) {
                     <Card.Text>
                         {props.description}
                     </Card.Text>
-                    <Button variant="primary" onClick={props.url}>Comprar</Button>
+                    <Button variant="primary" href={props.url}>Comprar</Button>
                 </Card.Body>
             </Card>
         </div>
