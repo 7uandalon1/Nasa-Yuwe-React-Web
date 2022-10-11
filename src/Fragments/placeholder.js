@@ -13,7 +13,7 @@ import { EffectFade, Autoplay } from "swiper";
 
 import "swiper/css/navigation";
 
-import LazyLoad from 'react-lazy-load';
+//import LazyLoad from 'react-lazy-load';
 
 setTimeout(animate, 1000);
 
@@ -291,18 +291,18 @@ function Placeholder() {
               loading="lazy"
             />
           </SwiperSlide>
-
+          
           <SwiperSlide>
-          <LazyLoad height={762} offset={300}>
+          
             <img
               className="slider"
               src={require("./assets/img/servicios/alojamiento_rural/FB_IMG_1652800583277.webp")}
               alt=""
               loading="lazy"
             />
-            </LazyLoad>
+          
           </SwiperSlide>
-
+        
           <SwiperSlide>
             <img
               className="slider"
