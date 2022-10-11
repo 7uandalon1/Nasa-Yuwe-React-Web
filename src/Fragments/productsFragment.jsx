@@ -8,11 +8,13 @@ import { Services } from "../Components/services";
 
 import {IndividualProduct} from '../Components/product.js'
 
+
 function ProductFragment() {
     return (
-        
-        <IndividualProduct title="vino" description="hola" url="google.com">
+        <section id="products-section">
+        <IndividualProduct title="vino" description="hola" url="https://www.google.com">
         </IndividualProduct>
+        </section>
     );
 }
 

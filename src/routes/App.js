@@ -45,7 +45,7 @@ function App() {
   return (
     <HashRouter>
       <Header></Header>
-
+      <div style={{position: 'relative', top: 0, left: 0, width: '100vw', height: '17vh', backgroundColor: 'black'}}></div>
       <Routes>
         <Route path='/' element={home()}></Route>
         <Route path='/about' element={about()}></Route>

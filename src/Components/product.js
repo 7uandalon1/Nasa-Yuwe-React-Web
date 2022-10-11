@@ -5,7 +5,7 @@ import Placeholder from 'react-bootstrap/Placeholder';
 
 function IndividualProduct(props) {
     return (
-        <section id="services-section">
+        
         <div className="d-flex justify-content-around">
             <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src="holder.js/100px180" />
@@ -14,11 +14,11 @@ function IndividualProduct(props) {
                     <Card.Text>
                         {props.description}
                     </Card.Text>
-                    <Button variant="primary"><a src={props.url}>Comprar</a></Button>
+                    <Button variant="primary" onClick={props.url}>Comprar</Button>
                 </Card.Body>
             </Card>
         </div>
-    </section>
+    
     );
 }
 

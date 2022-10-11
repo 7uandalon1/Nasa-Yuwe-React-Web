@@ -381,7 +381,12 @@ main {
   margin-bottom: 5%;
   font-size: calc(1em + 5%);
 }
+/* PRODUCTS STYLES */
 
+#products-section {
+  width: 100vw;
+  padding: calc(1rem + 1vw);
+}
 /* HISTORY STYLES */
 
 #history-section {
