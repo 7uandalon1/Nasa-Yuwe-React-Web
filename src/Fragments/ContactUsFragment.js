@@ -1,7 +1,5 @@
 import React from "react";
 
-import { BsWhatsapp } from "react-icons/bs";
-
 import { ReactComponent as Svg3 } from "./assets/svg/undraw_contact_us_re_4qqt.svg";
 
 function ContactUsFragment() {

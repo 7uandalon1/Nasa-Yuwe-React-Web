@@ -32,18 +32,6 @@ const CustomCheckbox = ({ children, ...props }) => {
   );
 };
 
-const CustomSelect = ({ label, ...props }) => {
-  const [field, meta] = useField(props);
-  return (
-    <>
-      <label htmlFor={props.id || props.name}>{label}</label>
-      <select {...field} {...props} />
-      {meta.touched && meta.error ? (
-        <div className="error">{meta.error}</div>
-      ) : null}
-    </>
-  );
-};
 
 function NewsletterFragment() {
   return (
@@ -102,7 +90,7 @@ function NewsletterFragment() {
                     placeholder="example@test.div"
                   ></CustomInputText>
                   <CustomCheckbox name="TermsAcepted">
-                    Acepto los <a href="#">Terminos y Condiciones</a>
+                    Acepto los <a href="https://www.nasayuwe.com.co">Terminos y Condiciones</a>
                   </CustomCheckbox>
                   <button type="sumbit" className="sumbit-button">
                     {" "}

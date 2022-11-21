@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useEffect, useState } from "react";
+
 
 import { Nav, Navbar, Container } from "react-bootstrap";
 
@@ -12,7 +12,7 @@ import Headroom from "react-headroom";
 
 import { Link } from "react-scroll";
 
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 
 function Header() {
   const activeStyle = {
@@ -62,25 +62,25 @@ function Header() {
                       </NavLink>
                     </Nav.Link>
                     {/*added menu option products*/}
-                    <Nav.Link>
+                    {/* <Nav.Link>
                       <NavLink style={({ isActive }) =>
                         isActive ? activeStyle : { color: "inherit" }} to="/products">
                         Productos
                       </NavLink>
-                    </Nav.Link>
+                    </Nav.Link> */}
 
-                    <Nav.Link>
+                    {/* <Nav.Link>
 
                       <NavLink style={({ isActive }) =>
                         isActive ? activeStyle : { color: "inherit" }} to="/newsletter">
                         Ofertas
                       </NavLink>
 
-                    </Nav.Link>
+                    </Nav.Link> */}
                     <Nav.Link href="">
                       <NavLink style={({ isActive }) =>
                         isActive ? activeStyle : { color: "inherit" }} to="/contact">
-                        Contactanos
+                        Contáctanos
                       </NavLink>
                     </Nav.Link>
                   </React.Fragment>
